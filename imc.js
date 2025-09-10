@@ -1,11 +1,13 @@
-let peso = parseInt(prompt("Infome o seu peso"));
-let altura = parseInt(prompt("Informe a sua altura"));
-let imc = (peso * 100) / (altura *altura);
+let peso = parseFloat(prompt("Infome o seu peso"));
+let altura = parseFloat(prompt("Informe a sua altura"));
+let alturaCM = altura/100;
 
-if(imc <18,5){
+let imc = peso / (alturaCM *alturaCM);
+
+if(imc <18.5){
     console.log("Abaixo do Peso")
 
-}else if (imc >= 18,5 && imc <=25 ){
+}else if (imc >= 18.5 && imc <=25 ){
     console.log("Peso Normal")
 
 }else if(imc > 25 && imc <=30){
